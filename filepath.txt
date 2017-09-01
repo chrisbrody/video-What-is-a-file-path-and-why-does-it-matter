@@ -1,0 +1,70 @@
+#FILE_PATH 1.1 - Intro to Exploring a file's file path
+#FILE_PATH 1.2 - File path in a browser
+#FILE_PATH 1.3 - File path to link CSS
+#FILE_PATH 1.4 - File path for background images
+#FILE_PATH 1.5 - Outro to Exploring a file's file path
+
+
+
+#FILE_PATH 1.1 - Intro to Exploring a file's file path
+Hey Chris from Codify Academy here, in this video I want to explore three common file paths that we use as developers and hopefully it will help you understand how file paths work overall a bit more.
+
+
+
+#FILE_PATH 1.2 - File path in a browser
+First lets look at a file path in a browser, open the index file of our template folder in google.
+
+If we look at the url here, we should see something like this:
+file:///Users/chrisbrody/Desktop/codify/template/index.html
+this file path tells the browser where the index.html file can be found.
+your will be a bit different hopefully just because you don't have my name.
+
+To understand the file for this index.html file
+we look from the end, the index.file is going to be found in a folder named template, and that template folder is in a folder named codify, and that codify folder is in a folder named Desktop, and that desktop folder is in a folder named chrisbrody, and that chrisbrody folder is in a folder named users, and last that users folder is in a folder that is the computer hard drive.
+
+what happens to the file path when its moved or change?
+
+move this template folder out of codify and onto the desktop,
+refresh the browser. and we see the file is not found. because its not in the same location any more.
+we can update the file path in the browse, if we remove "codify/" from the url, the browser will not look for codify after the template folder but instead it will look for the desktop folder, refresh the page and the browser can find that file again.
+file:///Users/chrisbrody/Desktop/template/index.html
+
+ok lets move it back to its original position in codify and update the file path in the browser again to make sure we know where it should be.
+file:///Users/chrisbrody/Desktop/codify/template/index.html
+i'll give you a second to see if you get it.
+
+Ok so just add "codify/" back in to where we took it out before and it should work again.
+
+So why does this matter you to us?
+File pathing matter because in an incorrect path is given, files can't be found, and if files can't be found, then that thing that device
+
+
+
+#FILE_PATH 1.3 - File path to link CSS
+The second place we want to look at a file path from is index file itself, so open that up in atom,
+we know the href src attribute are used to include files to this index.html page.
+When we include them we have to code in the correct location for the browser to look for a file file you want to add.
+
+so when your create a file path in a html file, stop and think for a second, from this files location where does need to go to get this css or image file.
+
+we set it up our template folder so we can go from the index file into a css folder or into a img folder to include files.
+
+
+
+#FILE_PATH 1.4 - File path for background images
+The Third place we want to look at is from a css file in a different "directory" thats a folder.
+
+Right now from our index file we include a file called main.css inside of a .css folder. Sometimes we will need to include files into our main.css file so we have to look at it from there.
+
+lets image you want to use background image, we need to download or include one so we can have a background, lets go ahead and do that, I'll download one on google to test it out.
+In css we add a selector it requires a location or URL of the image you want to include.
+I should just be able to go into my img folder and find my img right? because I included my css file in my html.
+Sadly that's not how it works. Lets look at our folder structure, the main.css file is in a css folder, so if we get out of that folder then we can go into the img folder and find the file.
+
+so we can use ../ to go up one folder. you can use ../ for as many folder as you need to move up. we just need to add one for ours.
+
+
+
+#FILE_PATH 1.5 - Outro to Exploring a file's file path
+Thats is on file paths hopefully you understand file paths a bit more and will be able to reference this when your building.
+In the future you'll see more complicated file paths but just remember we are telling a computer what folders a file is located in.
